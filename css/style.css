@@ -1,0 +1,372 @@
+body {
+  background-color: black;
+  color: rgb(0, 0, 0);
+  font-family: "Big Shoulders Display";
+  font-weight: 600;
+  margin: 0px;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-bottom: 10px;
+
+}
+
+.modal-header {
+  background-color: rgb(207, 172, 125);
+  color: black;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: rgb(19, 18, 18);
+  color: rgb(207, 172, 125);
+  border: 1px solid;
+}
+
+.btn {
+  background-color: rgb(207, 172, 125);
+  color: black;
+  border: 1px solid rgb(207, 172, 125);
+}
+
+.btn:hover {
+  background-color: rgb(83, 141, 24);
+  border: 1px solid rgb(83, 141, 24);
+  color: black;
+}
+
+.container,
+.container-fluid,
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.logos {
+  background-color: rgb(62, 64, 68);
+  display: flex;
+  justify-content: center;
+}
+
+.logo-1 {
+  justify-content: center;
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+.logo-leyend1 {
+  align-self: center;
+}
+
+.logo-leyend1 {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-leyend2 {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 576px) {
+  header {
+    padding-bottom: 10px;
+  }
+
+  .logo-1 {
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 10px;
+  }
+
+  .logo-leyend1 {
+    align-self: center;
+  }
+
+  .logo-leyend1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-leyend2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.anim {
+  transition: transform 1s ease-out;
+  color: rgb(207, 172, 125);
+}
+
+.anim:hover {
+  transform: scale(1.1);
+}
+
+.menu {
+  color: rgb(207, 172, 125);
+  padding: 0px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+
+@keyframes animat {
+  0% {
+    color: rgb(215, 223, 145);
+  }
+  100% {
+    color: rgb(209, 152, 29);
+  }
+}
+
+.main-image {
+  box-sizing: content-box;
+  background: url(../img/background_beer.jpg) no-repeat;
+  background-size: cover;
+  box-shadow: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+}
+
+.main-image h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 4em;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.main-image p {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(215, 223, 145);
+  font-weight: 200;
+  padding: 0px 30px;
+}
+
+.beers > div {
+  border: 1px solid rgb(49, 29, 49);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.shop {
+  background-color: rgb(207, 172, 125);
+  color: black;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  box-shadow: rgb(66, 70, 66);
+  border-radius: 5px;
+  font-weight: bold;
+  max-width: 90px;
+  min-width: 80px;
+}
+
+.product-name {
+  font-size: 1.5em;
+  color: rgb(172, 169, 166);
+}
+
+.price {
+  font-size: 2.5em;
+  color: rgb(204, 158, 9);
+}
+
+.description {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+}
+
+@media only screen and (min-width: 576px) {
+  .column-1 {
+    text-align: right;
+  }
+
+  .column-2 {
+    text-align: left;
+  }
+}
+
+.customer {
+  padding-top: 20px;
+}
+
+.customer h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 0px;
+  color: rgb(207, 172, 125);
+}
+
+.contact-card {
+  text-align: center;
+}
+.delivery {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  font-size: 2em;
+  padding: 30px 10px;
+}
+
+.field {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(206, 202, 197);
+}
+
+select {
+  font-size: 20px;
+  padding: 5px;
+  background-color: hsl(33, 8%, 79%);
+  max-width: 240px;
+}
+
+input {
+  font-size: 20px;
+  padding: 5px;
+  width: 240px;
+}
+
+.campo_numer {
+  width: 240px;
+  background-color: #cecac5;
+  text-align: right;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.agregar {
+  height: 50px;
+  width: 130px;
+  background-color: rgb(207, 172, 125);
+  color: black;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  box-shadow: rgb(66, 70, 66);
+  border-radius: 5px;
+  font-weight: bold;
+}
+.agregar:hover {
+  background-color: rgb(57, 163, 15);
+}
+
+.buton {
+  background-color: rgb(207, 172, 125);
+  color: black;
+  margin-top: 4px;
+  box-shadow: rgb(66, 70, 66);
+  border-radius: 5px;
+  font-weight: bold;
+}
+.formulario_de_cliente {
+  text-align: center;
+}
+.info-cliente {
+  border: 1px solid rgb(19, 18, 18);
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.button-p {
+  background-color: rgb(215, 223, 145);
+  opacity: "0.7";
+  color: rgb(34, 1, 30);
+  opacity: "0.7";
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 0px solid black;
+  border-radius: 30px;
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  align-self: center;
+}
+
+.pedido-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.finalizar-pedido {
+  width: 80%;
+  background-color: #1f1d1d;
+  color: rgb(215, 223, 145);
+}
+
+.total {
+  color: rgb(207, 172, 125);
+  font-size: 20px;
+}
+
+.monto {
+  color: rgb(207, 172, 125);
+  font-size: 20px;
+}
+
+.items {
+  color: rgb(207, 172, 125);
+  font-size: 18px;
+}
+
+.icono-eliminar {
+  color: red;
+  cursor: pointer;
+}
+
+.finalizar {
+  height: 50px;
+  background-color: rgb(207, 172, 125);
+  color: black;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  box-shadow: rgb(66, 70, 66);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.formulario_de_cliente {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
